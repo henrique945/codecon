@@ -7,6 +7,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { join } from 'path';
 import { UserResolver } from './resolvers/user.resolver';
+import { FinanceModule } from './finance/finance.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { UserResolver } from './resolvers/user.resolver';
       sortSchema: true,
       playground: true,
     }),
+    FinanceModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService, UserResolver],
