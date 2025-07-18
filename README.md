@@ -17,3 +17,10 @@ HG Brasil API	Dados econômicos, dólar, clima - https://hgbrasil.com/status/fin
 Alpha Vantage	Bolsa, câmbio, indicadores (requere key) - https://www.alphavantage.co/
 
 BrasilAPI	Câmbio e dados bancários - https://brasilapi.com.br/
+
+### Prisma
+
+```npx prisma generate```
+```npx prisma migrate dev --name alguma-mudanca```
+
+> Script adicionado
